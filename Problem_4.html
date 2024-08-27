@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Navigation Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            background-color: white;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .nav-links li a span {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .login-btn a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #ff4d6d;
+            border-radius: 5px;
+            color: #ff4d6d;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .login-btn a:hover {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        .hired {
+            text-align: center;
+            padding-top: 130px;
+        }
+
+        .hired h1 {
+            font-family: "Poppins", sans-serif;
+            width: 1280px;
+            height: 62px;
+
+        }
+
+        .hired p {
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            width: 980px;
+            height: 68px;
+            padding-left: 250px;
+        }
+
+        .second-part {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .left-part {
+            margin-left: 130px;
+        }
+
+        .left-part h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 34px;
+            width: 584px;
+            height: 80px;
+            margin-top: 178px;
+            margin-bottom: 100px;
+
+
+        }
+
+        .left-part p {
+            width: 498px;
+            height: 70px;
+            /* left: 189px;
+            gap: 0px;
+            opacity: 0px; */
+            font-family: "Open Sans", sans-serif;
+            /* font-weight: 0; */
+            /* font-size:16px; */
+        }
+
+        .form {
+            width: 515px;
+            height: 685px;
+            padding-top: 48px;
+            left: 845px;
+            gap: 0px;
+            border-radius: 16px 0px 0px 0px;
+            opacity: 0px;
+
+        }
+
+        .form h4 {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            width: 451px;
+            height: 28px;
+            margin-top: 23px;
+            margin-left: 32px;
+            margin-bottom: 20px;
+            gap: 0px;
+            opacity: 0px;
+            font-weight: 700;
+            font-size: 20px;
+
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inputs label {
+            color: #21191B;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .inputs input {
+            width: 451px;
+            height: 48px;
+            border: 1px solid;
+            border-radius: 8px;
+            padding: 12px;
+            gap: 8px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            color: #B3B3B3;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+
+        }
+
+        .form button {
+            width: 451px;
+            height: 48px;
+            border-radius: 8px;
+            Padding: 2px, 16px, 12px, 16px;
+            background: #ED0331;
+            color: white;
+            border: none;
+            margin-top: 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .roles {
+            width: Fixed (1, 440px)px;
+            height: Fixed (406px)px;
+            margin-top: 100px;
+            padding: 48px 80px 48px 80px;
+            gap: 55px;
+            opacity: 0px;
+
+
+        }
+
+        .roles h2 {
+            width: 921px;
+            height: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 34px;
+            color: #0A0103;
+            margin-left: 250px;
+        }
+
+        .buttons {
+            width: 402px;
+            height: 40px;
+            background: #FFFFFF;
+            margin-top: 50px;
+            margin-left: 530px;
+        }
+
+        .buttons button {
+            width: 114px;
+            height: 24px;
+            background: #FFFFFF;
+            color: #0A0103;
+            font-family: "Open Sans", sans-serif;
+            border: none;
+            font-weight: 550;
+            font-size: 14px;
+            letter-spacing: 1.25px;
+            text-align: center;
+
+        }
+
+        .designer {
+            display: flex;
+            width: 1000px;
+            height: 96px;
+            gap: 16px;
+            opacity: 0px;
+            margin-left: 370px;
+            margin-top: 55px;
+        }
+
+        .designer p {
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+            padding: 12px, 14px, 12px, 14px;
+            gap: 10px;
+            background: #F7F7FF;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #6E71CC;
+            text-align: center;
+            padding-top: 8px;
+
+
+
+        }
+
+        .down {
+            display: flex;
+            width: 1000px;
+            height: 96px;
+            margin-left: 370px;
+            gap: 16px;
+
+
+        }
+
+        .down p {
+            width: 150px;
+            height: 40px;
+            border-radius: 8px;
+            padding: 12px, 14px, 12px, 14px;
+            gap: 10px;
+            background: #F7F7FF;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #6E71CC;
+            text-align: center;
+            padding-top: 8px;
+
+        }
+
+        .hire {
+            width: 551px;
+            height: 39px;
+            gap: 0px;
+            opacity: 0px;
+            margin-left: 435.5px;
+            margin-bottom: 44px;
+        }
+
+        .hire h2 {
+            width: 551px;
+            height: 39px;
+            gap: 0px;
+            opacity: 0px;
+            font-weight: 700;
+            text-align:center;
+            font-size:34px;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="masai logo.svg" alt="masai">
+                </div>
+                <div class="right">
+                    <ul class="nav-links">
+                        <li><a href="#">Courses <span>&#9662;</span></a></li>
+                        <li><a href="#">Fees</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contests</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                    <div class="login-btn">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <div class="hired">
+                    <h1>Hire Masai graduates</h1>
+                    <p>Become a part of the top companies in technology that already hired our graduates for<br />
+                        their engineering teams.</p>
+                </div>
+                <div class="second-part">
+                    <div class="left-part">
+                        <h2>Find your best fit in our graduates</h2>
+                        <p>Lay down your talent requirements with us</p>
+                        <p>Choose from the pool of our graduates</p>
+                        <p>Review profile and portfolio</p>
+                        <p>Hire the candidate best-suited for your team</p>
+                    </div>
+                    <div class="form">
+                        <h4>Learn more about hiring</h4>
+                        <div class="inputs">
+                            <label>Full name</label>
+                            <input type="text" placeholder="Enter your full name">
+                        </div>
+                        <div class="inputs">
+                            <label>Work E-mail</label>
+                            <input type="email" placeholder="Enter email">
+                        </div>
+                        <div class="inputs">
+                            <label>Business phone</label>
+                            <input type="number" placeholder="Enter phone number">
+                        </div>
+                        <div class="inputs">
+                            <label>Designation</label>
+                            <input type="text" placeholder="Eg. HR head">
+                        </div>
+                        <div class="inputs">
+                            <label>Company </label>
+                            <input type="text" placeholder="Enter company name">
+                        </div>
+                        <div class="inputs"
+                            style="display:inline;width:201px; height: 68px; margin-left:161px; border:1px rgb(206, 204, 204) solid; border-radius: 10px; padding:20px;">
+                            <input type="radio" style="width:24px; height: 24px;">
+                            <label>I'm not a robot </label>
+                        </div><br />
+                        <button>SUBMIT</button>
+
+                    </div>
+                </div>
+                <div class="roles">
+                    <h2>Here are some of the job roles we can assist you with </h2>
+                    <div class="buttons">
+                        <button>DEVELOPMENT</button>
+                        <button>DESIGN</button>
+                        <button>ANALYTICS</button>
+                    </div>
+                    <div class="designer">
+                        <p>UI Designer</p>
+                        <p>Product Designer</p>
+                        <p>UI UX Designer</p>
+                        <p>UX Researcher</p>
+                        <p>Visual Designer</p>
+                    </div>
+                    <div class="down">
+                        <p>Interaction Designer</p>
+                        <p>Motion Designer</p>
+                        <p>UX Designer</p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="hire">
+                    <h2>Why hire from us?</h2>
+                </div>
+                <div class="last">
+
+                </div>
+            </main>
+        </div>
+    </header>
+</body>
+
+</html>
